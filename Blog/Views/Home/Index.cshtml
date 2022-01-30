@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Blog.Models.Post>
+
+@{ 
+
+}
+
+@*<h2>Home Page!</h2>
+<img src="~/content/static/antique-art-books-1448709.jpg" width="500" />*@
+
+<div class="main-img">
+    <span class="title">Amazing Blog Site</span>
+
+</div>
+<div class="container">
+    @*<ul>
+            @foreach(var post in Model)
+                {
+            <li>
+                <a asp-controller="Home" asp-action="Post" asp-route-id="@post.Id">
+                    @post.Title
+                </a>
+            </li>
+                }
+        </ul>*@
+    @foreach (var post in Model)
+    {
+        var image_path = $"/Image/{post.Image}";
+    <a class="post" asp-controller="Home" asp-action="Post" asp-route-id="@post.Id">
+        <img src="@image_path" />
+        <span class="title">
+        @post.Title
+        </span>
+    </a>
+    }
+</div>
