@@ -6156,11 +6156,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CAD Level 2\\MVC Practice\\Blog\\Blog\\Blog.csproj",
+      "projectUniqueName": "D:\\CAD Level 2\\MVC Practice\\Blog-Beginner\\Blog\\Blog.csproj",
       "projectName": "Blog",
-      "projectPath": "D:\\CAD Level 2\\MVC Practice\\Blog\\Blog\\Blog.csproj",
+      "projectPath": "D:\\CAD Level 2\\MVC Practice\\Blog-Beginner\\Blog\\Blog.csproj",
       "packagesPath": "C:\\Users\\ashle\\.nuget\\packages\\",
-      "outputPath": "D:\\CAD Level 2\\MVC Practice\\Blog\\Blog\\obj\\",
+      "outputPath": "D:\\CAD Level 2\\MVC Practice\\Blog-Beginner\\Blog\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ashle\\AppData\\Roaming\\NuGet\\NuGet.Config",

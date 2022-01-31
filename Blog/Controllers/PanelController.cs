@@ -43,7 +43,10 @@ namespace Blog.Controllers
                     Id = post.Id,
                     Title = post.Title,
                     Body=post.Body,
-                    CurrentImage = post.Image
+                    CurrentImage = post.Image,
+                    Description=post.Description,
+                    Tags=post.Tags,
+                    Category=post.Category
                 }) ;
             }
         }
@@ -56,6 +59,9 @@ namespace Blog.Controllers
                 Id = vm.Id,
                 Title = vm.Title,
                 Body = vm.Body,
+                Description=vm.Description,
+                Category=vm.Category,
+                Tags=vm.Tags
             };
 
             if (vm.Image == null)
@@ -64,6 +70,8 @@ namespace Blog.Controllers
             }
             else
             {
+  
+
                 post.Image = await _fileManager.SaveImage(vm.Image);
             }
 
@@ -76,7 +84,7 @@ namespace Blog.Controllers
             if (await _repo.SaveChangesAsync())
                 return RedirectToAction("Index");
             else
-                return View(post);
+                return View(vm);
         }
 
         [HttpGet]

@@ -26,6 +26,15 @@ namespace Blog.Data.Repository
             return _ctx.Posts.ToList();
         }
 
+        public List<Post> GetAllPosts(string category)
+        {
+            //Not working and I don't know why
+            //Func<Post, bool> InCategory = (post) => { return post.Category.ToLower().Equals(category.ToLower()); };
+            //return _ctx.Posts.Where(post => InCategory(post)).ToList();
+            return _ctx.Posts
+                .Where(post => post.Category.ToLower().Equals(category.ToLower())).ToList();
+        }
+
         public Post GetPost(int id)
         {
             return _ctx.Posts.FirstOrDefault(p=>p.Id==id);

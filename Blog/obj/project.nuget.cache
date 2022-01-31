@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CNwxhKJ25jG3g/ZXG5p5RtFZTOkdBvMODmfw4a/TPx9yriY3emR3rbIwSY9BS5T53cJkn3kaY0P5+5MUjcEPDg==",
+  "dgSpecHash": "y6i9Y1+S1GAe29OFDSb4GnVLNP6eIlrk/LoSOP45x9rFcSo2iDGm69UFFUWa/cJTfBjbAk/E9zX1F56b8QL+jA==",
   "success": true,
-  "projectFilePath": "D:\\CAD Level 2\\MVC Practice\\Blog\\Blog\\Blog.csproj",
+  "projectFilePath": "D:\\CAD Level 2\\MVC Practice\\Blog-Beginner\\Blog\\Blog.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ashle\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.21\\microsoft.aspnetcore.cryptography.internal.3.1.21.nupkg.sha512",
     "C:\\Users\\ashle\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.21\\microsoft.aspnetcore.cryptography.keyderivation.3.1.21.nupkg.sha512",
